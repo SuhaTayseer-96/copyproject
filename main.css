@@ -1,0 +1,269 @@
+/* Custom CSS for logo animation */
+    
+body{
+    background-color: bisque;
+    /* text-align: center; */
+    max-width:100%;
+   } 
+ .navbar-brand {
+   font-size: 24px;
+   font-weight: bold;
+   margin: inherit;
+   position: relative;
+ }
+ .navbar-brand span.full-name {
+   opacity: 0;
+   transition: opacity 0.3s ease-in-out;
+   color: #a65858;
+
+ }
+ .navbar-brand:hover span.abbreviation {
+   opacity: 0;
+   transition: opacity 0.3s ease-in-out;
+ }
+ .navbar-brand:hover span.full-name {
+   opacity: 1;
+   transition: opacity 0.3s ease-in-out;
+ }
+ @keyframes colorChange {
+   0% {
+     color: #000;
+   }
+   50% {
+     color: rgb(60, 123, 211);
+   }
+   100% {
+     color: #000000;
+   }
+ }
+ .navbar-brand span.abbreviation {
+   display: inline-block;
+   animation: colorChange 2s infinite;
+ }
+
+ /* sections */
+ section {
+   padding: 60px 20px;
+   text-align: center;
+
+ }
+ .experiences .card-body,  .card-body {
+   display: none;
+  
+ }
+ .experiences .card:hover .card-body, .card-body {
+   display: block;
+   color: #000000;
+ }
+ .projects p{
+   font-size:15px; 
+ }
+ .skills ul{
+   font-size: 15px;
+   font-weight: bold;
+ }
+ .experiences p{
+   font-size: 20px;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+ }
+
+ /* Styling for cards */
+ .card {
+   border: none;
+   border-radius: 10px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   transition: transform 0.3s, box-shadow 0.3s;
+ }
+ .card:hover {
+   transform: scale(1.05);
+   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+ }
+ .card-header {
+   background-color: rgb(177, 58, 58);
+   color: white;
+   border-radius: 10px 10px 0 0;
+ }
+ .card-header2 {
+   background-color: #86add5;
+   color: white;
+   border-radius: 10px 10px 0 0;
+ }
+ .card-body {
+   background-color: #f8f9fa;
+   border-radius: 0 0 10px 10px;
+ }
+ .container{
+   /* display: block; */
+   text-align: left;
+   max-width: 100%;
+ }
+ .container p{
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ }
+ .containerfst{
+   text-align: center;
+   font-size: 25px;
+
+ }
+ .containerfst> h2{
+   font-size: 15px;
+   color: rgb(0, 0, 0);
+   font-size: 30px;
+   text-decoration: underline;
+ }
+ /* Styling for footer */
+ footer {
+   background-color: #a65858;
+   color: white;
+   padding-top: 15px 0;
+   text-align: center;
+ }
+ .footer {
+   width: 100%;} 
+
+  .footer-content{
+   width: 100%;
+   margin:auto;
+   padding: 7px;
+   text-align: center;
+   font-size: 20px;
+   font-family: Arial, Helvetica, sans-serif;
+ }
+ .footer-content p{
+   width: 100%;
+   margin:auto;
+   padding: 10px;
+   text-align: center;
+   font-size: 20px;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ }
+
+ /* .footer-content a {
+margin: auto;
+padding: 1px;
+text-align: center;
+font-size: 20px;
+color: #f8f9fa;
+} */
+ .footer-content i, a{
+   width: 100px;
+   margin: auto;
+   padding: 1px;
+   text-align: center;
+   font-size: 20px;
+   color: #f8f9fa;
+ }
+ /* .footer-content a{
+   width: 100px;
+   margin: auto;
+   padding: 1px;
+   text-align: center;
+   font-size: 20px;
+   color: #f8f9fa;} */
+ 
+   .footer-content h3 {
+width: 100%;
+margin: auto;
+display: flex;
+flex-direction: column;
+text-decoration: underline;
+text-align: center;
+font-size: 50px;
+font-size-adjust: initial;
+color: #f8f9fa;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+ .container1{
+   width: 1000px;
+   margin:auto;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   gap:10px;
+   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+   font-size: medium;
+ } 
+
+.card p{
+ font-weight: bold;
+ font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+
+}
+
+ .boldtext{
+     font-size:50px; 
+     color: rgb(52, 76, 128);
+  
+ }
+
+ .tratext{
+     font-size:75px; 
+     color: orange;
+ }
+ p {
+ margin-top: 0;
+ margin-bottom: 1rem;
+ padding-inline: inherit;
+ text-align: center;
+ font-size:30px;;
+ font-family: auto;
+
+}
+/* Responsive */
+ @media (max-width: 425px) {
+   .navbar-brand {
+     font-size: 18px;
+     margin: inherit;
+   }
+  
+   .navbar-brand span.abbreviation {
+ margin-right: 0; 
+ justify-content: center; /* Center the navbar items */
+ display: flex;
+} 
+
+.navbar-brand span.full-name {
+ display: none; 
+} 
+
+   .boldtext {
+     font-size: 24px;
+   }
+   .tratext {
+     font-size: 28px;
+   }
+   p {
+     font-size: 14px;
+   }
+   .footer-content {
+     width: 100%;
+     font-size: 16px;
+   }
+   .footer-content p {
+     font-size: 14px;
+   }
+   .containerfst h2 {
+     font-size: 20px;
+   }
+   .card-header, .card-header2 {
+     font-size: 14px;
+   }
+   .card-body {
+     font-size: 12px;
+     
+   }
+   .card {
+     margin-bottom: 20px;
+   }
+   .container {
+     padding: 0 10px;
+   }
+   .navbar-nav {
+     text-align: center;
+   }
+   .navbar-nav .nav-item {
+     display: inline-block;
+     margin: 0 5px;
+   }
+ } 
